@@ -1,7 +1,6 @@
 git+https://github.com/m-bain/whisperx.git
-fastapi
-uvicorn
-python-multipart
+streamlit
+stqdm
 pandas
 numpy
 torch
