@@ -153,6 +153,10 @@ with output:
                 temp = AudioSegment.from_wav(audio_uploaded)
                 temp.export(f"{name}.wav")
 
+            if audio_uploaded.name.endswith(".mp3"):
+                temp = AudioSegment.from_wav(audio_uploaded)
+                temp.export(f"{name}.wav")
+
             # audio_bytes = audio_uploaded.read()
             # st.audio(audio_bytes, format="audio/wav")
             if language == "":
