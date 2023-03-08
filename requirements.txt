@@ -1,0 +1,7 @@
+git+https://github.com/m-bain/whisperx.git
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+torch
