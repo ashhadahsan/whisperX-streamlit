@@ -10,7 +10,7 @@ RUN apt-get install -y git
 
 
 COPY . .
-
+RUN xargs -a packages.txt apt-get install --yes
 # install python dependencies
 
 RUN pip3 install --upgrade pip
