@@ -137,6 +137,11 @@ with input:
         )
     else:
         temperature = [temperature]
+    try:
+        if len(temperature) == 0:
+            st.error("Choose correct value for temperature")
+    except:
+        pass
     # st.write(temperature)
     submit = st.button("Submit", type="primary")
 with output:
